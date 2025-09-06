@@ -1,89 +1,113 @@
-# 🍎🍌 Fruit Classification with Deep Learning
+🍎🍌 Fruit Classification
+This project is a complete pipeline for Fruit Classification using deep learning. It includes:
 
-This project is a **deep learning pipeline** for classifying fruit images using a custom CNN model built with **TensorFlow/Keras**.  
-It also includes a **Streamlit web app** that lets you upload a fruit image and get predictions instantly.
+Custom CNN model with Keras
 
----
+Training pipeline (train/valid/test split)
 
-## 🚀 Features
-- Train a CNN model on the [Fruits Classification Dataset](https://www.kaggle.com/datasets/utkarshsaxenadn/fruits-classification/data)  
-- Supports **train / valid / test** splits  
-- Save and load trained models (`.h5` format)  
-- Streamlit app to classify uploaded fruit images  
-- Optional bounding box detection (OpenCV workaround)  
+Prediction from single images
 
----
+Streamlit web app for deployment
 
-## 📂 Project Structure
+(Optional) Bounding box detection with OpenCV
 
+🚀 Project Structure
+text
 fruit-classification/
-│── app.py # Streamlit app for predictions
-│── train.py # Train model script
-│── predict.py # Prediction utilities
-│── data_loader.py # Data loading pipeline
-│── model.py # Model architecture
-│── requirements.txt # Project dependencies
-│── README.md # Project documentation
-│── models/ # Saved trained models
-│── data/ # Dataset (train / valid / test)
-
-
-
----
-
-## ⚙️ Installation
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/fruit-classification.git
-   cd fruit-classification
-Install dependencies:
-
-  bash
-
-pip install -r requirements.txt
-▶️ Training the Model
-Place the dataset inside the data/ folder:
-
+│
+├── data/                 # Dataset (train/valid/test folders)
+│
+├── models/
+│   └── fruit_model.h5    # Saved trained model
+│
+├── data_loader.py        # Data loading & preprocessing
+├── model.py              # Model architecture
+├── train.py              # Train model
+├── predict.py            # Predict from image
+├── app.py                # Streamlit web app
+│
+├── requirements.txt
+└── README.md
+📦 Installation
 bash
-Sao chép mã
+# Clone project
+git clone https://github.com/Hieu29052005/fruit-classification.git
+cd fruit-classification
+
+# Install dependencies
+pip install -r requirements.txt
+📂 Dataset Setup
+Organize dataset in this format:
+
+text
 data/
 ├── train/
+│   ├── apple/
+│   ├── banana/
+│   ├── orange/
+│   └── ...
 ├── valid/
-└── test/
-Run the training script:
+│   ├── apple/
+│   ├── banana/
+│   ├── orange/
+│   └── ...
+├── test/
+    ├── apple/
+    ├── banana/
+    ├── orange/
+    └── ...
+🏋️ Training
+Train the CNN model:
 
 bash
-Sao chép mã
 python train.py
-The trained model will be saved at:
+The trained model will be saved as:
 
-bash
-Sao chép mã
+text
 models/fruit_model.h5
-▶️ Running the App
-Start the Streamlit app:
+🔍 Prediction
+Predict from a single image:
 
 bash
-Sao chép mã
+python predict.py --image path/to/fruit.jpg
+🌐 Web App (Streamlit)
+Run the app:
+
+bash
 streamlit run app.py
-Upload a fruit image (.jpg, .jpeg, .png).
+Upload a fruit image → see predicted class and confidence score
 
-Get classification results instantly.
+(Optional) Bounding boxes drawn using OpenCV
 
+⚙️ Requirements
+Python 3.8+
 
-Confidence: 92.5%
-✨ Future Improvements
-Add YOLOv8 object detection for bounding boxes
+TensorFlow 2.x
 
-Improve accuracy with transfer learning (ResNet, EfficientNet, etc.)
+Keras
 
-Deploy app on Streamlit Cloud / Hugging Face Spaces
+OpenCV
 
+Streamlit
 
+Pillow
 
+NumPy
 
+Install all with:
 
----
+bash
+pip install -r requirements.txt
+📌 Deployment
+You can deploy on:
 
-👉 Do you want me to also generate a **ready-to-use `requirements.txt`** with **TensorFlow, Streamlit, OpenCV,
+Streamlit Cloud
+
+Hugging Face Spaces
+
+Render
+
+Docker
+
+✨ Author
+Nguyễn Vương Trung Hiếu
