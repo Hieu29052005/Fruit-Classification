@@ -39,7 +39,7 @@ Sao chép mã
 # Clone project
 git clone https://github.com/Hieu29052005/fruit-classification.git
 cd fruit-classification
-```
+
 # Install dependencies
 pip install -r requirements.txt
 📂 Dataset Setup
@@ -64,8 +64,6 @@ data/
     ├── orange/
     └── ...
 🏋️ Training
-Train the CNN model:
-
 bash
 Sao chép mã
 python train.py
@@ -75,14 +73,10 @@ bash
 Sao chép mã
 models/fruit_model.h5
 🔍 Prediction
-Predict from a single image:
-
 bash
 Sao chép mã
 python predict.py --image path/to/fruit.jpg
 🌐 Web App (Streamlit)
-Run the app:
-
 bash
 Sao chép mã
 streamlit run app.py
