@@ -16,8 +16,7 @@ fruit-classification/
 │
 ├── data/ # Dataset (train/valid/test folders)
 │
-├── models/
-│ └── fruit_model.h5 # Saved trained model
+├── fruit_model.h5 # Saved trained model
 │
 ├── data_loader.py # Data loading & preprocessing
 ├── model.py # Model architecture
