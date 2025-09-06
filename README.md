@@ -11,7 +11,7 @@ This project is a complete pipeline for **Fruit Classification** using deep lear
 ---
 
 ## 🚀 Project Structure
-
+```
 fruit-classification/
 │
 ├── data/ # Dataset (train/valid/test folders)
@@ -27,9 +27,8 @@ fruit-classification/
 │
 ├── requirements.txt
 └── README.md
+```
 
-yaml
-Sao chép mã
 
 ---
 
@@ -42,11 +41,11 @@ cd fruit-classification
 
 # Install dependencies
 pip install -r requirements.txt
+```
 📂 Dataset Setup
 Organize dataset in this format:
 
-bash
-Sao chép mã
+```
 data/
 ├── train/
 │   ├── apple/
@@ -63,56 +62,57 @@ data/
     ├── banana/
     ├── orange/
     └── ...
+```
 🏋️ Training
-bash
-Sao chép mã
+```bash
 python train.py
+```
 The trained model will be saved as:
 
-bash
-Sao chép mã
+```bash
 models/fruit_model.h5
+```
 🔍 Prediction
-bash
-Sao chép mã
+```bash
 python predict.py --image path/to/fruit.jpg
+```
 🌐 Web App (Streamlit)
-bash
-Sao chép mã
+```bash
 streamlit run app.py
+```
 Upload a fruit image → see predicted class and confidence score
 (Optional) Bounding boxes drawn using OpenCV
 
 ⚙️ Requirements
-Python 3.8+
+* Python 3.8+
 
-TensorFlow 2.x
+* TensorFlow 2.x
 
-Keras
+* Keras
 
-OpenCV
+* OpenCV
 
-Streamlit
+* Streamlit
 
-Pillow
+* Pillow
 
-NumPy
+* NumPy
 
 Install all with:
 
-bash
-Sao chép mã
+```bash
 pip install -r requirements.txt
+```
 📌 Deployment
 You can deploy on:
 
-Streamlit Cloud
+* Streamlit Cloud
 
-Hugging Face Spaces
+* Hugging Face Spaces
 
-Render
+* Render
 
-Docker
+* Docker
 
 ✨ Author
 Nguyễn Vương Trung Hiếu
