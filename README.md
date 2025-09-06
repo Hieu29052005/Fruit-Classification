@@ -1,18 +1,34 @@
-🍎🍌 Fruit Classification
-This project is a complete pipeline for Fruit Classification using deep learning. It includes:
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
 
-Custom CNN model with Keras
+\title{\Huge \textbf{\faApple\ \faBanana\ Fruit Classification}}
+\author{Nguyễn Vương Trung Hiếu}
+\date{}
 
-Training pipeline (train/valid/test split)
+\begin{document}
 
-Prediction from single images
+\maketitle
 
-Streamlit web app for deployment
+\section*{Project Overview}
+This project is a complete pipeline for \textbf{Fruit Classification} using deep learning. It includes:
 
-(Optional) Bounding box detection with OpenCV
+\begin{itemize}
+    \item \textbf{Custom CNN model with Keras}
+    \item \textbf{Training pipeline (train/valid/test split)}
+    \item \textbf{Prediction from single images}
+    \item \textbf{Streamlit web app for deployment}
+    \item \textbf{(Optional) Bounding box detection with OpenCV}
+\end{itemize}
 
-🚀 Project Structure
-text
+\section*{Project Structure}
+\begin{verbatim}
 fruit-classification/
 │
 ├── data/                 # Dataset (train/valid/test folders)
@@ -28,18 +44,21 @@ fruit-classification/
 │
 ├── requirements.txt
 └── README.md
-📦 Installation
-bash
+\end{verbatim}
+
+\section*{Installation}
+\begin{lstlisting}[language=bash]
 # Clone project
 git clone https://github.com/Hieu29052005/fruit-classification.git
 cd fruit-classification
 
 # Install dependencies
 pip install -r requirements.txt
-📂 Dataset Setup
-Organize dataset in this format:
+\end{lstlisting}
 
-text
+\section*{Dataset Setup}
+Organize dataset in this format:
+\begin{verbatim}
 data/
 ├── train/
 │   ├── apple/
@@ -56,58 +75,61 @@ data/
     ├── banana/
     ├── orange/
     └── ...
-🏋️ Training
+\end{verbatim}
+
+\section*{Training}
 Train the CNN model:
-
-bash
+\begin{lstlisting}[language=bash]
 python train.py
+\end{lstlisting}
+
 The trained model will be saved as:
-
-text
+\begin{verbatim}
 models/fruit_model.h5
-🔍 Prediction
+\end{verbatim}
+
+\section*{Prediction}
 Predict from a single image:
-
-bash
+\begin{lstlisting}[language=bash]
 python predict.py --image path/to/fruit.jpg
-🌐 Web App (Streamlit)
-Run the app:
+\end{lstlisting}
 
-bash
+\section*{Web App (Streamlit)}
+Run the app:
+\begin{lstlisting}[language=bash]
 streamlit run app.py
-Upload a fruit image → see predicted class and confidence score
+\end{lstlisting}
+
+Upload a fruit image $\rightarrow$ see predicted class and confidence score
 
 (Optional) Bounding boxes drawn using OpenCV
 
-⚙️ Requirements
-Python 3.8+
-
-TensorFlow 2.x
-
-Keras
-
-OpenCV
-
-Streamlit
-
-Pillow
-
-NumPy
+\section*{Requirements}
+\begin{itemize}
+    \item Python 3.8+
+    \item TensorFlow 2.x
+    \item Keras
+    \item OpenCV
+    \item Streamlit
+    \item Pillow
+    \item NumPy
+\end{itemize}
 
 Install all with:
-
-bash
+\begin{lstlisting}[language=bash]
 pip install -r requirements.txt
-📌 Deployment
+\end{lstlisting}
+
+\section*{Deployment}
 You can deploy on:
+\begin{itemize}
+    \item Streamlit Cloud
+    \item Hugging Face Spaces
+    \item Render
+    \item Docker
+\end{itemize}
 
-Streamlit Cloud
-
-Hugging Face Spaces
-
-Render
-
-Docker
-
-✨ Author
+\section*{Author}
 Nguyễn Vương Trung Hiếu
+
+\end{document}
