@@ -1,4 +1,4 @@
-# 🍎🍌 Fruit Classification
+# Fruit Classification
 
 This project is a complete pipeline for **Fruit Classification** using deep learning. It includes:
 
@@ -10,7 +10,7 @@ This project is a complete pipeline for **Fruit Classification** using deep lear
 
 ---
 
-## 🚀 Project Structure
+## Project Structure
 ```
 fruit-classification/
 │
@@ -32,7 +32,7 @@ fruit-classification/
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Clone project
@@ -42,7 +42,7 @@ cd fruit-classification
 # Install dependencies
 pip install -r requirements.txt
 ```
-📂 Dataset Setup
+* Dataset Setup
 Organize dataset in this format:
 
 ```
@@ -63,27 +63,27 @@ data/
     ├── orange/
     └── ...
 ```
-🏋️ Training
+Training
 ```bash
 python train.py
 ```
 The trained model will be saved as:
 
-```bash
+```
 models/fruit_model.h5
 ```
-🔍 Prediction
+Prediction
 ```bash
 python predict.py --image path/to/fruit.jpg
 ```
-🌐 Web App (Streamlit)
+Web App (Streamlit)
 ```bash
 streamlit run app.py
 ```
 Upload a fruit image → see predicted class and confidence score
 (Optional) Bounding boxes drawn using OpenCV
 
-⚙️ Requirements
+Requirements
 * Python 3.8+
 
 * TensorFlow 2.x
@@ -103,7 +103,7 @@ Install all with:
 ```bash
 pip install -r requirements.txt
 ```
-📌 Deployment
+# Deployment
 You can deploy on:
 
 * Streamlit Cloud
@@ -114,6 +114,6 @@ You can deploy on:
 
 * Docker
 
-✨ Author
+# Author
 
 Nguyen Vuong Trung Hieu
