@@ -43,6 +43,7 @@ cd fruit-classification
 pip install -r requirements.txt
 ```
 * Dataset Setup
+  
 Organize dataset in this format:
 
 ```
