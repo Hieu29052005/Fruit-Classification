@@ -115,4 +115,5 @@ You can deploy on:
 * Docker
 
 ✨ Author
-Nguyễn Vương Trung Hiếu
+
+Nguyen Vuong Trung Hieu
