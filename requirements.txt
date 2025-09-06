@@ -1,0 +1,13 @@
+streamlit
+tensorflow
+keras
+opencv-python
+numpy
+Pillow
+torch
+torchvision
+ultralytics
+matplotlib
+scikit-learn
+scipy
+pandas

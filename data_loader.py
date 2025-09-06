@@ -1,0 +1,16 @@
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+def load_data(train_dir, val_dir, test_dir, img_size=(128, 128), batch_size=32):
+    datagen = ImageDataGenerator(rescale=1./255)
+
+    train_data = datagen.flow_from_directory(
+        train_dir, target_size=img_size, batch_size=batch_size, class_mode='categorical'
+    )
+    val_data = datagen.flow_from_directory(
+        val_dir, target_size=img_size, batch_size=batch_size, class_mode='categorical'
+    )
+    test_data = datagen.flow_from_directory(
+        test_dir, target_size=img_size, batch_size=batch_size, class_mode='categorical', shuffle=False
+    )
+    return train_data, val_data, test_data
